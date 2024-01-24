@@ -1,0 +1,98 @@
+body{
+
+  background-color: rgb(10, 10, 10);
+  height: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.link{
+
+  display: block;
+  padding: 1vw 4vw;
+  color: white;
+  font-size: clamp(2em, 8vw, 7em);
+  font-family: 'McLaren', sans-serif;
+  text-decoration: none;
+  border-top: 1px solid white;
+  position: relative;
+
+}
+
+.link:hover::before{
+  transition: width 600ms ease ;
+  width: 100%;
+
+
+}
+.link:before {
+  background: linear-gradient(to right, transparent, lime);
+  content:"";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 0%;
+
+}
+
+
+
+.link:nth-child(3) {
+ border-bottom: 1px solid white;
+
+}
+
+.font{
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+/*
+.link{
+
+  display: block;
+  color: white; 
+  font-size: clamp(2em, 8vw, 7em);
+  padding: clamp(0.25em, 1vw, 1em) clamp(1em, 4vw, 4em);
+  font-family: 'McLaren', sans-serif;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+
+}
+
+
+.link:hover:before{
+width: 100%;
+
+}
+
+.link:before {
+
+  content: "";  
+  background: linear-gradient(
+    to right, transparent, lime, yellow
+  );
+  position: relative;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+
+   
+  );
+}
+
+:root{
+
+  --blue: rgb(61, 90, 254);
+  --light-blue: rgb(33, 90, 243);
+
+}
+
+*/
